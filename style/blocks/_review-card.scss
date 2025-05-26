@@ -13,10 +13,10 @@
   }
 
   &__author {
-    --imageSize: rem(60);
+    --imageSize: #{rem(60)};
 
     @include laptop {
-      --imageSize: rem(50);
+      --imageSize: #{rem(50)};
     }
   }
 

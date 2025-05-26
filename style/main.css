@@ -920,7 +920,7 @@ button[aria-label]::before {
 .advantage-card__link::after {
   content: "";
   right: 0;
-  background: url("../../icon/arrow-top-right-black.svg") center no-repeat var(--color-accent);
+  background: url("../icon/arrow-top-right-black.svg") center no-repeat var(--color-accent);
   border-radius: 50%;
   width: var(--circleSize);
   height: var(--circleSize);
@@ -1468,11 +1468,11 @@ button[aria-label]::before {
   }
 }
 .review-card__author {
-  --imageSize: rem(60);
+  --imageSize: 3.75rem;
 }
 @media (width <= 90.06125rem) {
   .review-card__author {
-    --imageSize: rem(50);
+    --imageSize: 3.125rem;
   }
 }
 .review-card__body {
