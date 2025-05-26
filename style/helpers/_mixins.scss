@@ -45,7 +45,6 @@
   translate: 0 -50%;
 }
 
-
 @mixin square($size) {
   width: $size;
   height: $size;
@@ -65,15 +64,15 @@
   overflow: hidden !important;
 }
 
-@mixin full-vw-centered-line($property:top) {
+@mixin full-vw-centered-line($property: top) {
   position: relative;
 
   &::before {
     @include abs-x;
 
     content: '';
-    #{property}: 0;
-    width: 100vw;
+    #{$property}: 0;
+    width: calc(100vw - var(--container-padding-x)*2);
     height: rem(1);
     background-color: var(--color-dark-15);
   }

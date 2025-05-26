@@ -7,14 +7,14 @@
   align-items: center;
   column-gap: fluid(16, 8);
 
-  @include laptop {
-    --imageSize: #{rem(60)};
-  }
-
   &__image {
     width: var(--imageSize);
     border-radius: 50%;
     background-color: var(--color-dark-15);
+
+    @include laptop {
+      --imageSize: #{rem(60)};
+    }
   }
 
   &__body {
